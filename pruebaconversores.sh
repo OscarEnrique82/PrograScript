@@ -187,5 +187,5 @@ if [[ "$valor_almacenamiento" =~ ^[0-9]+$ ]]; then
     resultado_almacenamiento=$(convertir_almacenamiento "$valor_almacenamiento" "$unidad_origen_almacenamiento" "$unidad_destino_almacenamiento")
     echo "$valor_almacenamiento $unidad_origen_almacenamiento equivale a $resultado_almacenamiento $unidad_destino_almacenamiento"
  else 
-    echo "Error: El valor ingresado no es válido."
+    echo "Error: El valor ingresado no es válido prueba."
 fi
