@@ -1,0 +1,26 @@
+Estudiante más sobresaliente
+-------------------------------------------------
+Billy
+
+Estudiantes con excelencia académica (Nota > 9)
+-------------------------------------------------
+Dexter
+Julio
+Billy
+
+Estudiantes aprobados (Nota >= 6)
+-------------------------------------------------
+Dexter
+Irene
+Oscar
+Gabriel
+Julio
+Billy
+Karla
+
+Estudiantes reprobados (Nota < 6)
+-------------------------------------------------
+Daniel
+Juan
+Ana
+Jorge
