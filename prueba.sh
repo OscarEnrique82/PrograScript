@@ -1,0 +1,1 @@
+echo "La fecha de ejeccion de este archivo es: $(date)" >> prueba1.txt
