@@ -31,7 +31,7 @@ echo "-----------------------------------------------" >> /workspaces/Progra_Scr
 echo "Monto anual" >> /workspaces/Progra_Script/reporte_ventas.txt
 echo "-----------------------------------------------" >> /workspaces/Progra_Script/reporte_ventas.txt
 for i in "${!venta_mensual[@]}"; do
-    monto_anual=$((monto_anual + ${venta_mensual[$i]}))
+    monto_anual=$((monto_anual +${venta_mensual[$i]}))
 done
 echo " $""$monto_anual" >> /workspaces/Progra_Script/reporte_ventas.txt
 echo "" >> /workspaces/Progra_Script/reporte_ventas.txt
