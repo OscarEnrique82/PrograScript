@@ -11,7 +11,7 @@ es_anagrama() {
     # Eliminar espacios y convertir a minúsculas
     # Se utilizan comandos para eliminar espacios (tr -d '[:space:]') 
     # y convertir todas las letras a minúsculas (tr '[:upper:]' '[:lower:]')
-    # para que la comparación no sea sensible a espacios ni a mayúsculas/minúsculas x2.
+    # para que la comparación no sea sensible a espacios ni a mayúsculas/minúsculas.
     local str1=$(echo "$1" | tr -d '[:space:]' | tr '[:upper:]' '[:lower:]')
     local str2=$(echo "$2" | tr -d '[:space:]' | tr '[:upper:]' '[:lower:]')
 
