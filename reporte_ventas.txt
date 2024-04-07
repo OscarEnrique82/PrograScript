@@ -1,0 +1,39 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::    REPORTE DE VENTAS    ::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+-------------------------------------------------
+Total venta mensual
+-------------------------------------------------
+Enero: $ 100134.85
+Febrero: $ 7387.82
+Marzo: $ 928495.25
+Abril: $ 219434.05
+Mayo: $ 332235.69
+Junio: $ 445034.58
+Julio: $ 557833.46
+Agosto: $ 670632.35
+Septiembre: $ 783431.24
+Octubre: $ 896230.11
+Noviembre: $ 1009029.00
+Diciembre: $ 1121827.90
+-------------------------------------------------
+Las ventas anuales son: $7071706.33
+-------------------------------------------------
+
+-------------------------------------------------
+El producto más vendido es:
+-------------------------------------------------
+Teclados
+
+-------------------------------------------------
+La sucursal más frecuente es:
+-------------------------------------------------
+Centro
+
+Numero de ventas de la sucursal Escalon:  13
+Numero de ventas de la sucursal Venezuela: 16
+Numero de ventas de la sucursal Luceiro: 10
+Numero de ventas de la sucursal Centro: 21
+Numero de ventas de la sucursal La rabida: 15
+Numero de ventas de la sucursal La mascota: 9
