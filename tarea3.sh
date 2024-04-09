@@ -98,3 +98,5 @@ echo "Numero de ventas de la sucursal Luceiro: $(awk -F";" '{print $4}' /workspa
 echo "Numero de ventas de la sucursal Centro: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "Centro" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
 echo "Numero de ventas de la sucursal La rabida: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "La rabida" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
 echo "Numero de ventas de la sucursal La mascota: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "La mascota" | wc -l)" >> /workspaces/PrograScript/reporte_ventas.txt
+
+mail -s "Reporte de ventas" DSNP011423@ugb.edu.sv < /workspaces/PrograScript/reporte_ventas.txt
