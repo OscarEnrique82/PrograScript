@@ -48,7 +48,7 @@ fi
 if [ $mes == "Diciembre" ]; then
     monto_diciembre=$(echo $monto_diciembre $v | awk '{printf "%.2f", $1 + $2}')
 fi
-done < /workspaces/PrograScript/ventas.csv
+done < /workspaces/PrograScript/ventas1.csv
 
 # Generar reporte
 > /workspaces/PrograScript/reporte_ventas.txt    
@@ -79,24 +79,24 @@ echo "-------------------------------------------------" >> /workspaces/PrograSc
 echo "" >> /workspaces/PrograScript/reporte_ventas.txt
 
 echo "-------------------------------------------------" >> /workspaces/PrograScript/reporte_ventas.txt
-producto_mas_vendido=$(cut -d';' -f3 /workspaces/PrograScript/ventas.csv | sort | uniq -c | sort -nr | head -n1) 
+producto_mas_vendido=$(cut -d';' -f3 /workspaces/PrograScript/ventas1.csv | sort | uniq -c | sort -nr | head -n1) 
 echo -e "El producto más vendido es:" >> /workspaces/PrograScript/reporte_ventas.txt
 echo -e "-------------------------------------------------" >> /workspaces/PrograScript/reporte_ventas.txt
 echo -e "$(echo $producto_mas_vendido | awk '{$1=""; print $0}' | sed 's/^ //')" >> /workspaces/PrograScript/reporte_ventas.txt
 echo "" >> /workspaces/PrograScript/reporte_ventas.txt
 
 echo "-------------------------------------------------" >> /workspaces/PrograScript/reporte_ventas.txt
-cliente_mas_frecuente=$(cut -d';' -f4 /workspaces/PrograScript/ventas.csv | sort | uniq -c | sort -nr | head -n1) 
+cliente_mas_frecuente=$(cut -d';' -f4 /workspaces/PrograScript/ventas1.csv | sort | uniq -c | sort -nr | head -n1) 
 echo -e "La sucursal más frecuente es:" >> /workspaces/PrograScript/reporte_ventas.txt
 echo "-------------------------------------------------" >> /workspaces/PrograScript/reporte_ventas.txt
 echo "$(echo $cliente_mas_frecuente | awk '{$1=""; print $0}' | sed 's/^ //')" >> /workspaces/PrograScript/reporte_ventas.txt
 echo "" >> /workspaces/PrograScript/reporte_ventas.txt
 
-echo "Numero de ventas de la sucursal Escalon:  $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "Escalon" | wc -l)">> /workspaces/PrograScript/reporte_ventas.txt
-echo "Numero de ventas de la sucursal Venezuela: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "Venezuela" | wc -l)" >> /workspaces/PrograScript/reporte_ventas.txt
-echo "Numero de ventas de la sucursal Luceiro: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "Luceiro" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
-echo "Numero de ventas de la sucursal Centro: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "Centro" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
-echo "Numero de ventas de la sucursal La rabida: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "La rabida" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
-echo "Numero de ventas de la sucursal La mascota: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas.csv | grep -o "La mascota" | wc -l)" >> /workspaces/PrograScript/reporte_ventas.txt
+echo "Numero de ventas de la sucursal Escalon:  $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas1.csv | grep -o "Escalon" | wc -l)">> /workspaces/PrograScript/reporte_ventas.txt
+echo "Numero de ventas de la sucursal Venezuela: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas1.csv | grep -o "Venezuela" | wc -l)" >> /workspaces/PrograScript/reporte_ventas.txt
+echo "Numero de ventas de la sucursal Luceiro: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas1.csv | grep -o "Luceiro" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
+echo "Numero de ventas de la sucursal Centro: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas1.csv | grep -o "Centro" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
+echo "Numero de ventas de la sucursal La rabida: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas1.csv | grep -o "La rabida" | wc -l )">> /workspaces/PrograScript/reporte_ventas.txt
+echo "Numero de ventas de la sucursal La mascota: $(awk -F";" '{print $4}' /workspaces/PrograScript/ventas1.csv | grep -o "La mascota" | wc -l)" >> /workspaces/PrograScript/reporte_ventas.txt
 
 mail -s "Reporte de ventas" DSNP011423@ugb.edu.sv < /workspaces/PrograScript/reporte_ventas.txt

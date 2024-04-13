@@ -1,0 +1,9 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::: Reporte ventas por departamento ::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+El total de ventas en Ahuachapan es: $ 463991.21
+El total de ventas en La Libertad es: $ 4128591.82
+El total de ventas en San Salvador es: $ 2280242.12
+El total de ventas en Santa Ana es: $ 750234.54
+El total de ventas en Sonsonate es: $ 559492.16
