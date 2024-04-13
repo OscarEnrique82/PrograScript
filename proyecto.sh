@@ -14,10 +14,9 @@ Octubre=0
 Noviembre=0
 Diciembre=0
 
-# Definir función para imprimir las ventas por mes
+# Función para imprimir las ventas por mes
 imprimir_ventas_mes() 
 {
-
 echo -e "El total de ingresos para el mes de Enero son: $ $Enero"
 echo -e "El total de ingresos para el mes de Febrero son: $ $Febrero"
 echo -e "El total de ingresos para el mes de Marzo son: $ $Marzo"
@@ -30,11 +29,7 @@ echo -e "El total de ingresos para el mes de Septiembre son: $ $Septiembre"
 echo -e "El total de ingresos para el mes de Octubre son: $ $Octubre"
 echo -e "El total de ingresos para el mes de Noviembre son: $ $Noviembre"
 echo -e "El total de ingresos para el mes de Diciembre son: $ $Diciembre"
-
 }
-
-
-
 
 # Leer el archivo CSV y procesar los datos
 while IFS=";" read -r Brand Model Description year month chasis vin transmission cilindraje traccion combustion departamento municipio precio cliente categoria
@@ -90,8 +85,6 @@ do
         fi
         # fin del calculo de ingreso por mes        
 
-
-
         # acumular las ventas por cliente
         if [ "$cliente" = "Continental Motors" ]; then
             clientecontinental=$(echo "$precio $clientecontinental" | awk '{result = $1 + $2; printf "%.2f\n", result}')
@@ -139,6 +132,7 @@ do
         if [ "$departamento" = "Sonsonate" ]; then
             Sonsonate=$(echo "$precio $Sonsonate" | awk '{result = $1 + $2; printf "%.2f\n", result}')
         fi
+   
         # calcular ingreso por categoria 
         if [ "$categoria" = "Compacto" ]; then
             compacto=$(echo "$precio $compacto" | awk '{result = $1 + $2; printf "%.2f\n", result}')
@@ -153,8 +147,8 @@ do
             suv=$(echo "$precio $suv" | awk '{result = $1 + $2; printf "%.2f\n", result}')
         fi
        
-       done < /workspaces/PrograScript/ventas.csv
-
+done < /workspaces/PrograScript/ventas.csv
+# Función para imprimir ventas por departamento
  ventas_por_departamento()
  {
     echo -e "El total de ventas en Ahuachapan es: $ $Ahuachapan"
@@ -163,6 +157,7 @@ do
     echo -e "El total de ventas en Santa Ana es: $ $SantaAna"
     echo -e "El total de ventas en Sonsonate es: $ $Sonsonate"
  }
+ # Función para imprimir ventas por categoria
 ingreso_por_categoria()
 {
     echo -e "El total de ventas en COMPACTO es: $ $compacto"
@@ -172,7 +167,6 @@ ingreso_por_categoria()
 }
 
 #Funcion para imprimir las ventas por cliente
-
 ventas_por_cliente()
 {
 echo -e "El ingreso total del cliente Continental Motors es de: $ $clientecontinental"
@@ -184,8 +178,7 @@ echo -e "El total de ventas del cliente Excel es : $ $excel"
 echo -e "El total de ventas del cliente Didea es : $ $Didea"
 }
 
-#Funcion para el top 10
-
+#Funcion para imprimir el top 10
 top10autos()
 {
 auto1=$(grep -c "FIAT 500X SPORT CROSS 1.3 150CV DCT" /workspaces/PrograScript/ventas.csv)
@@ -230,7 +223,6 @@ for ((i=0; i<10; i++))
 do
     echo -e "Auto #$((i+1)): $(echo ${sorted_combined[i]} | cut -d':' -f1) - Unidades vendidas: $(echo ${sorted_combined[i]} | cut -d':' -f2)" >> /workspaces/PrograScript/Reporte_top10.txt
 done
-
 }
 
 #llamamos a las funciones y generación de reportes
@@ -276,4 +268,4 @@ cat /workspaces/PrograScript/Reporte_ventas_por_departamento.txt >> /workspaces/
 echo "" >> /workspaces/PrograScript/reporte_completo.txt
 cat /workspaces/PrograScript/Reporte_ingreso_por_categoria.txt >> /workspaces/PrograScript/reporte_completo.txt
 
-mail -s "Proyecto final DSNP011423 DSNP010923" DSNP010923@ugb.edu.sv < /workspaces/PrograScript/reporte_completo.txt
+mail -s "Proyecto final DSNP011423 DSNP010923" DSNP011423@ugb.edu.sv < /workspaces/PrograScript/reporte_completo.txt
