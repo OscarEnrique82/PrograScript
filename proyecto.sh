@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Este proyecto ha sido creado por Oscar Mejía DSNP011423 y Daniel Chávez DSNP010923
+
 #iniciallizar las variables globales
 Enero=0
 Febrero=0
@@ -256,7 +258,7 @@ echo ":::::::::::::::::::::::::::::::::::::::::::::::::" >> /workspaces/PrograSc
 echo "" >> /workspaces/PrograScript/Reporte_ingreso_por_categoria.txt
 ingreso_por_categoria >> /workspaces/PrograScript/Reporte_ingreso_por_categoria.txt
 
-#Reporte completo
+# Concatenacion de todos los reportes en un solo archivo llamado Reporte completo
 echo "" > /workspaces/PrograScript/reporte_completo.txt
 cat /workspaces/PrograScript/Reporte_ventas_por_cliente.txt >> /workspaces/PrograScript/reporte_completo.txt
 echo "" >> /workspaces/PrograScript/reporte_completo.txt
@@ -268,4 +270,5 @@ cat /workspaces/PrograScript/Reporte_ventas_por_departamento.txt >> /workspaces/
 echo "" >> /workspaces/PrograScript/reporte_completo.txt
 cat /workspaces/PrograScript/Reporte_ingreso_por_categoria.txt >> /workspaces/PrograScript/reporte_completo.txt
 
+# Enviando el reporte por correo, utilizando el comando mail, con el servicio postfix inciado y configurado
 mail -s "Proyecto final DSNP011423 DSNP010923" DSNP011423@ugb.edu.sv < /workspaces/PrograScript/reporte_completo.txt
