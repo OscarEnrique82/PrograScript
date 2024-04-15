@@ -1,0 +1,8 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::: Reporte ventas por categoria ::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+El total de ventas en COMPACTO es: $ 795998.11
+El total de ventas en DEPORTIVO es: $ 3623824.85
+El total de ventas en SEDAN es: $ 1282219.93
+El total de ventas en SUV es: $ 2480508.96

@@ -271,4 +271,4 @@ echo "" >> /workspaces/PrograScript/reporte_completo.txt
 cat /workspaces/PrograScript/Reporte_ingreso_por_categoria.txt >> /workspaces/PrograScript/reporte_completo.txt
 
 # Enviando el reporte por correo, utilizando el comando mail, con el servicio postfix inciado y configurado
-mail -s "Proyecto final DSNP011423 DSNP010923" luishernandez@ugb.edu.sv < /workspaces/PrograScript/reporte_completo.txt
+mail -s "Proyecto final DSNP011423 DSNP010923" DSNP011423@ugb.edu.sv < /workspaces/PrograScript/reporte_completo.txt
