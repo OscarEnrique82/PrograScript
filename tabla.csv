@@ -1,0 +1,21 @@
+Categoria;Producto;Mes;Departamento;Cliente;Ventas;Top 10 de los prod mas vendidos;Categorias;Ingresos por categorias;Meses;Ingresos por mes;Clientes;Ingresos por clientes;Depto;Ingresos por depto
+Saborizado;Coex Chocolate;Enero;Santa Ana;Wallmart;3450.00;Uno;Saborizado;8650.00;Enero;8775.00;Wallmart;14935.00;Santa Ana;13775.00
+Saborizado;Coex Vainilla;Enero;Chalchuapa;Pricemart;1250.00;Aliprac T.M;Soluble;16720.00;Febrero;6675.00;Pricemart;14725.00;Chalchuapa;12240.00
+Saborizado;Coex Canela;Febrero;Ahuachapan;Callejas;2975.00;Dos;Grano;4685.00;Marzo;8135.00;Callejas;13590.00;Ahuachapan;8805.00
+Saborizado;Coex Especias;Abril;La Union;Pricemart;975.00;Coex T.M;Tostado y Molido;13195.00;Abril;5435.00;;;La Union;8430.00
+Soluble;Suli;Mayo;Santa Ana;Wallmart;3100.00;Tres;;;Mayo;7365.00;;;;
+Soluble;Criollo;Junio;Chalchuapa;Callejas;1975.00;Selectos;;;Junio;6865.00;;;;
+Soluble;Liofilizado;Enero;Ahuachapan;Wallmart;2975.00;Cuatro;;;;;;;;
+Soluble;Granulado;Marzo;La Union;Wallmart;1910.00;Coex Chocolate;;;;;;;;
+Soluble;Coex;Marzo ;Santa Ana;Pricemart;2525.00;Cinco;;;;;;;;
+Soluble;Selectos;Abril;Chalchuapa;Callejas;3470.00;Suli;;;;;;;;
+Soluble;Maya;Mayo;Ahuachapan;Pricemart;765.00;Seis;;;;;;;;
+Grano;Espresso;Junio;La Union;Pricemart;920.00;Coex Canela;;;;;;;;
+Grano;Bourbon;Febrero;Santa Ana;Callejas;1200.00;Siete;;;;;;;;
+Grano;Clasico;Marzo;Chalchuapa;Pricemart;1575.00;Liofilizado;;;;;;;;
+Grano;Americano;Abril;Ahuachapan;Pricemart;990.00;Ocho;;;;;;;;
+Tostado y Molido;Espresso T.M;Marzo;La Union;Pricemart;2125.00;Coex;;;;;;;;
+Tostado y Molido;Coex T.M;Mayo;Santa Ana;Wallmart;3500.00;Nueve;;;;;;;;
+Tostado y Molido;Aliprac T.M;Junio;Chalchuapa;Callejas;3270.00;Pacamara T.M;;;;;;;;
+Tostado y Molido;Gourmet T.M;Enero;Ahuachapan;Pricemart;1100.00;Diez;;;;;;;;
+Tostado y Molido;Pacamara T.M;Febrero;La Union;Pricemart;2500.00;Espresso T.M;;;;;;;;
